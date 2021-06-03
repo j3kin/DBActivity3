@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DBActivity3.Views.BmiView"
+             >
+    <ListView x:Name="bmilist"
+              RowHeight="220"
+              HeightRequest="220"
+             
+             >
+
+        <ListView.ItemTemplate>
+
+            <DataTemplate >
+                <ViewCell>
+                    <StackLayout Orientation="Vertical" >
+                        <Label Text="IdNumber:" FontSize="Medium" FontAttributes="Bold"></Label>
+                        <Label Text="{Binding idnum}" FontAttributes="Bold" />
+                        <Label Text="Name:" FontSize="Medium" FontAttributes="Bold"></Label>
+                        <Label Text="{Binding name}" FontAttributes="Bold" />
+                        <Label Text="Weight:" FontSize="Medium" FontAttributes="Bold"></Label>
+                        <Label Text="{Binding Weight}" FontAttributes="Bold" />
+                        <Label Text="Height:" FontSize="Medium" FontAttributes="Bold"></Label>
+                        <Label Text="{Binding Height}" FontAttributes="Bold" />
+                        <Label Text="Bmi:" FontSize="Medium" FontAttributes="Bold"></Label>
+                        <Label Text="{Binding Bmi}" FontAttributes="Bold" />
+                        <Label Text="BmiCategory:" FontSize="Medium" FontAttributes="Bold"></Label>
+                        <Label Text="{Binding BmiCategory}" FontAttributes="Bold" />
+                    </StackLayout>
+                </ViewCell>
+                
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        <ListView.Header>
+            <StackLayout HorizontalOptions="Center"  >
+                <Label Text="Kendal Menard Lucero and Jay Lord Estorba" TextColor="Black"  FontSize="Small" />
+                <Label  Text="Search Here" FontSize="Large" HorizontalOptions="Center" TextColor="Black"/>
+                <Entry x:Name="idnum" Placeholder="enter ID Number" TextColor="Black" />
+                <Entry x:Name="name" Placeholder="enter Name" TextColor="Black" />
+                <Entry x:Name="weight" Placeholder="enter Weight" TextColor="Black" />
+                <Entry x:Name="height" Placeholder="enter Weight" TextColor="Black" />
+                <Button Text="Calculate BMI" />
+            </StackLayout> 
+        </ListView.Header>
+        
+        
+    </ListView>
+</ContentPage>
