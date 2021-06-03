@@ -33,7 +33,7 @@
         </ListView.ItemTemplate>
         <ListView.Header>
             <StackLayout HorizontalOptions="Center"  >
-                <Label Text="Kendal Menard Lucero and Jay Lord Estorba" TextColor="Black"  FontSize="Small" />
+                <Label Text="Kendal Menard Lucero andasd Jay Lord Estorba" TextColor="Black"  FontSize="Small" />
                 <Label  Text="Search Here" FontSize="Large" HorizontalOptions="Center" TextColor="Black"/>
                 <Entry x:Name="idnum" Placeholder="enter ID Number" TextColor="Black" />
                 <Entry x:Name="name" Placeholder="enter Name" TextColor="Black" />
